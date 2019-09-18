@@ -16,7 +16,8 @@ import itertools
 
 # Hyper-parameters
 theta = 0.5 # Kernel parameter
-eps = 0.05 # Acquisition function (probability of improvement) parameter
+eps = float(sys.argv[1]) # Acquisition function (probability of improvement) parameter
+#eps = 0.05 # Acquisition function (probability of improvement) parameter
 num_points = 100000 # Number of points to sample when using PI to find the next corrector values
 
 # Phase-space range when PI sampling: 
